@@ -73,7 +73,7 @@ class LanguageDetector {
 			$this->DB->Query($sql);
 			$result = $this->DB->Get();
 			
-			// Store received data to Array
+			// Store received data into Array
 			if(count($result)>0) {	
 				while(list($row) = each($result)) {	
 					$retArray[$this->languageCodes[$result[$row]["language_id"]]] = $result[$row]["count"];
