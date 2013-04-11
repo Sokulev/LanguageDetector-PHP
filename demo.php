@@ -49,7 +49,7 @@ header("Content-Type: text/html; charset=UTF-8");?>
 					url: "demo_server_side.php",
 					dataType: "HTML",
 					async: false
-				}).responseText;
+				 	}).responseText;
 			$("#resultid").text(page);
 		}
 	</script>	
